@@ -3697,3 +3697,2058 @@ Level flags = 0
 Total triangle count: 108
 Writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
 0 seconds elapsed
+
+
+
+Using shader api: shaderapiempty.dll
+materialPath: F:\Steam\steamapps\common\Portal 2\portal2\materials
+Loading Replacement Keys
+File path: F:\Steam\steamapps\common\Portal 2\portal2\cfg\materialsub.cfgLoading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (6441 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 35 texinfos to 23
+Reduced 4 texdatas to 4 (88 bytes to 88)
+Writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+
+nummapplanes:     (   116 / 65536 )
+nummapbrushes:    (    16 /  8192 )
+nummapbrushsides: (    96 / 65536 )
+num_map_overlays: (     0 /   512 )
+nummodels:        (     4 /  1024 )
+num_entities:     (    18 / 16384 )
+
+0 seconds elapsed
+
+
+
+8 threads
+reading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+reading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.prt
+   6 portalclusters
+   8 numportals
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 26
+Average clusters visible: 4
+Building PAS...
+Average clusters audible: 4
+visdatasize:64  compressed from 96
+writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[59 texlights parsed from 'lights.rad']
+
+Loading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+43 faces
+52248 square feet [7523840.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+43 patches before subdivision
+1413 patches after subdivision
+light has _fifty_percent_distance of 1000.000000 but _zero_percent_distance of 0.000000
+1 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 132069, max 214
+transfer lists:   1.0 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(11208, 10839, 10795)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(1317, 1212, 1194)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(152, 132, 129)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(17, 14, 14)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(2, 2, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(0, 0, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0004 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                   4/1024          192/49152    ( 0.4%) 
+brushes                 16/8192          192/98304    ( 0.2%) 
+brushsides              96/65536         768/524288   ( 0.1%) 
+planes                 116/65536        2320/1310720  ( 0.2%) 
+vertexes                87/65536        1044/786432   ( 0.1%) 
+nodes                   36/65536        1152/2097152  ( 0.1%) 
+texinfos                23/12288        1656/884736   ( 0.2%) 
+texdata                  4/2048          128/65536    ( 0.2%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_multiblend          0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                   43/65536        2408/3670016  ( 0.1%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               29/65536        1624/3670016  ( 0.0%) 
+facebrushes              0/0               0/0        ( 0.0%) 
+facebrushlists          43/0             172/0        ( 0.0%) 
+leaves                  41/65536        1312/2097152  ( 0.1%) 
+leaffaces               67/65536         134/131072   ( 0.1%) 
+leafbrushes             28/65536          56/131072   ( 0.0%) 
+areas                    3/256            24/2048     ( 1.2%) 
+surfedges              310/512000       1240/2048000  ( 0.1%) 
+edges                  170/256000        680/1024000  ( 0.1%) 
+LDR worldlights          1/8192          100/819200   ( 0.0%) 
+HDR worldlights          0/8192            0/819200   ( 0.0%) 
+leafwaterdata            0/32768           0/393216   ( 0.0%) 
+waterstrips              4/32768          40/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices            51/65536         102/131072   ( 0.1%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]       30164/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]          64/16777216 ( 0.0%) 
+entdata               [variable]        5350/393216   ( 1.4%) 
+LDR ambient table       41/65536         164/262144   ( 0.1%) 
+HDR ambient table       41/65536         164/262144   ( 0.1%) 
+LDR leaf ambient       128/65536        3584/1835008  ( 0.2%) 
+HDR leaf ambient        41/65536        1148/1835008  ( 0.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/12       ( 8.3%) 
+pakfile               [variable]       74442/0        ( 0.0%) 
+physics               [variable]        6441/4194304  ( 0.2%) 
+physics terrain       [variable]           2/1048576  ( 0.0%) 
+
+Level flags = 0
+
+Total triangle count: 108
+Writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+0 seconds elapsed
+
+
+
+Using shader api: shaderapiempty.dll
+materialPath: F:\Steam\steamapps\common\Portal 2\portal2\materials
+Loading Replacement Keys
+File path: F:\Steam\steamapps\common\Portal 2\portal2\cfg\materialsub.cfgLoading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (6441 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 35 texinfos to 23
+Reduced 4 texdatas to 4 (88 bytes to 88)
+Writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+
+nummapplanes:     (   116 / 65536 )
+nummapbrushes:    (    16 /  8192 )
+nummapbrushsides: (    96 / 65536 )
+num_map_overlays: (     0 /   512 )
+nummodels:        (     4 /  1024 )
+num_entities:     (    18 / 16384 )
+
+0 seconds elapsed
+
+
+
+8 threads
+reading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+reading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.prt
+   6 portalclusters
+   8 numportals
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 26
+Average clusters visible: 4
+Building PAS...
+Average clusters audible: 4
+visdatasize:64  compressed from 96
+writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[59 texlights parsed from 'lights.rad']
+
+Loading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+43 faces
+52248 square feet [7523840.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+43 patches before subdivision
+1413 patches after subdivision
+light has _fifty_percent_distance of 1000.000000 but _zero_percent_distance of 0.000000
+1 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 132069, max 214
+transfer lists:   1.0 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(11208, 10839, 10795)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(1317, 1212, 1194)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(152, 132, 129)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(17, 14, 14)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(2, 2, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(0, 0, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0004 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                   4/1024          192/49152    ( 0.4%) 
+brushes                 16/8192          192/98304    ( 0.2%) 
+brushsides              96/65536         768/524288   ( 0.1%) 
+planes                 116/65536        2320/1310720  ( 0.2%) 
+vertexes                87/65536        1044/786432   ( 0.1%) 
+nodes                   36/65536        1152/2097152  ( 0.1%) 
+texinfos                23/12288        1656/884736   ( 0.2%) 
+texdata                  4/2048          128/65536    ( 0.2%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_multiblend          0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                   43/65536        2408/3670016  ( 0.1%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               29/65536        1624/3670016  ( 0.0%) 
+facebrushes              0/0               0/0        ( 0.0%) 
+facebrushlists          43/0             172/0        ( 0.0%) 
+leaves                  41/65536        1312/2097152  ( 0.1%) 
+leaffaces               67/65536         134/131072   ( 0.1%) 
+leafbrushes             28/65536          56/131072   ( 0.0%) 
+areas                    3/256            24/2048     ( 1.2%) 
+surfedges              310/512000       1240/2048000  ( 0.1%) 
+edges                  170/256000        680/1024000  ( 0.1%) 
+LDR worldlights          1/8192          100/819200   ( 0.0%) 
+HDR worldlights          0/8192            0/819200   ( 0.0%) 
+leafwaterdata            0/32768           0/393216   ( 0.0%) 
+waterstrips              4/32768          40/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices            51/65536         102/131072   ( 0.1%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]       30164/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]          64/16777216 ( 0.0%) 
+entdata               [variable]        5350/393216   ( 1.4%) 
+LDR ambient table       41/65536         164/262144   ( 0.1%) 
+HDR ambient table       41/65536         164/262144   ( 0.1%) 
+LDR leaf ambient       128/65536        3584/1835008  ( 0.2%) 
+HDR leaf ambient        41/65536        1148/1835008  ( 0.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/12       ( 8.3%) 
+pakfile               [variable]       74442/0        ( 0.0%) 
+physics               [variable]        6441/4194304  ( 0.2%) 
+physics terrain       [variable]           2/1048576  ( 0.0%) 
+
+Level flags = 0
+
+Total triangle count: 108
+Writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+0 seconds elapsed
+
+
+
+Using shader api: shaderapiempty.dll
+materialPath: F:\Steam\steamapps\common\Portal 2\portal2\materials
+Loading Replacement Keys
+File path: F:\Steam\steamapps\common\Portal 2\portal2\cfg\materialsub.cfgLoading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (6441 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 35 texinfos to 23
+Reduced 4 texdatas to 4 (88 bytes to 88)
+Writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+
+nummapplanes:     (   116 / 65536 )
+nummapbrushes:    (    16 /  8192 )
+nummapbrushsides: (    96 / 65536 )
+num_map_overlays: (     0 /   512 )
+nummodels:        (     4 /  1024 )
+num_entities:     (    18 / 16384 )
+
+0 seconds elapsed
+
+
+
+8 threads
+reading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+reading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.prt
+   6 portalclusters
+   8 numportals
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 26
+Average clusters visible: 4
+Building PAS...
+Average clusters audible: 4
+visdatasize:64  compressed from 96
+writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[59 texlights parsed from 'lights.rad']
+
+Loading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+43 faces
+52248 square feet [7523840.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+43 patches before subdivision
+1413 patches after subdivision
+light has _fifty_percent_distance of 1000.000000 but _zero_percent_distance of 0.000000
+1 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 132069, max 214
+transfer lists:   1.0 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(11208, 10839, 10795)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(1317, 1212, 1194)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(152, 132, 129)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(17, 14, 14)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(2, 2, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(0, 0, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0004 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                   4/1024          192/49152    ( 0.4%) 
+brushes                 16/8192          192/98304    ( 0.2%) 
+brushsides              96/65536         768/524288   ( 0.1%) 
+planes                 116/65536        2320/1310720  ( 0.2%) 
+vertexes                87/65536        1044/786432   ( 0.1%) 
+nodes                   36/65536        1152/2097152  ( 0.1%) 
+texinfos                23/12288        1656/884736   ( 0.2%) 
+texdata                  4/2048          128/65536    ( 0.2%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_multiblend          0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                   43/65536        2408/3670016  ( 0.1%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               29/65536        1624/3670016  ( 0.0%) 
+facebrushes              0/0               0/0        ( 0.0%) 
+facebrushlists          43/0             172/0        ( 0.0%) 
+leaves                  41/65536        1312/2097152  ( 0.1%) 
+leaffaces               67/65536         134/131072   ( 0.1%) 
+leafbrushes             28/65536          56/131072   ( 0.0%) 
+areas                    3/256            24/2048     ( 1.2%) 
+surfedges              310/512000       1240/2048000  ( 0.1%) 
+edges                  170/256000        680/1024000  ( 0.1%) 
+LDR worldlights          1/8192          100/819200   ( 0.0%) 
+HDR worldlights          0/8192            0/819200   ( 0.0%) 
+leafwaterdata            0/32768           0/393216   ( 0.0%) 
+waterstrips              4/32768          40/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices            51/65536         102/131072   ( 0.1%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]       30164/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]          64/16777216 ( 0.0%) 
+entdata               [variable]        5350/393216   ( 1.4%) 
+LDR ambient table       41/65536         164/262144   ( 0.1%) 
+HDR ambient table       41/65536         164/262144   ( 0.1%) 
+LDR leaf ambient       128/65536        3584/1835008  ( 0.2%) 
+HDR leaf ambient        41/65536        1148/1835008  ( 0.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/12       ( 8.3%) 
+pakfile               [variable]       74442/0        ( 0.0%) 
+physics               [variable]        6441/4194304  ( 0.2%) 
+physics terrain       [variable]           2/1048576  ( 0.0%) 
+
+Level flags = 0
+
+Total triangle count: 108
+Writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+0 seconds elapsed
+
+
+
+Using shader api: shaderapiempty.dll
+materialPath: F:\Steam\steamapps\common\Portal 2\portal2\materials
+Loading Replacement Keys
+File path: F:\Steam\steamapps\common\Portal 2\portal2\cfg\materialsub.cfgLoading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (6441 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 35 texinfos to 23
+Reduced 4 texdatas to 4 (88 bytes to 88)
+Writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+
+nummapplanes:     (   116 / 65536 )
+nummapbrushes:    (    16 /  8192 )
+nummapbrushsides: (    96 / 65536 )
+num_map_overlays: (     0 /   512 )
+nummodels:        (     4 /  1024 )
+num_entities:     (    18 / 16384 )
+
+0 seconds elapsed
+
+
+
+8 threads
+reading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+reading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.prt
+   6 portalclusters
+   8 numportals
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 26
+Average clusters visible: 4
+Building PAS...
+Average clusters audible: 4
+visdatasize:64  compressed from 96
+writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[59 texlights parsed from 'lights.rad']
+
+Loading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+43 faces
+52248 square feet [7523840.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+43 patches before subdivision
+1413 patches after subdivision
+light has _fifty_percent_distance of 1000.000000 but _zero_percent_distance of 0.000000
+1 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 132069, max 214
+transfer lists:   1.0 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(11208, 10839, 10795)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(1317, 1212, 1194)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(152, 132, 129)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(17, 14, 14)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(2, 2, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(0, 0, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0004 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                   4/1024          192/49152    ( 0.4%) 
+brushes                 16/8192          192/98304    ( 0.2%) 
+brushsides              96/65536         768/524288   ( 0.1%) 
+planes                 116/65536        2320/1310720  ( 0.2%) 
+vertexes                87/65536        1044/786432   ( 0.1%) 
+nodes                   36/65536        1152/2097152  ( 0.1%) 
+texinfos                23/12288        1656/884736   ( 0.2%) 
+texdata                  4/2048          128/65536    ( 0.2%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_multiblend          0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                   43/65536        2408/3670016  ( 0.1%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               29/65536        1624/3670016  ( 0.0%) 
+facebrushes              0/0               0/0        ( 0.0%) 
+facebrushlists          43/0             172/0        ( 0.0%) 
+leaves                  41/65536        1312/2097152  ( 0.1%) 
+leaffaces               67/65536         134/131072   ( 0.1%) 
+leafbrushes             28/65536          56/131072   ( 0.0%) 
+areas                    3/256            24/2048     ( 1.2%) 
+surfedges              310/512000       1240/2048000  ( 0.1%) 
+edges                  170/256000        680/1024000  ( 0.1%) 
+LDR worldlights          1/8192          100/819200   ( 0.0%) 
+HDR worldlights          0/8192            0/819200   ( 0.0%) 
+leafwaterdata            0/32768           0/393216   ( 0.0%) 
+waterstrips              4/32768          40/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices            51/65536         102/131072   ( 0.1%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]       30164/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]          64/16777216 ( 0.0%) 
+entdata               [variable]        5350/393216   ( 1.4%) 
+LDR ambient table       41/65536         164/262144   ( 0.1%) 
+HDR ambient table       41/65536         164/262144   ( 0.1%) 
+LDR leaf ambient       128/65536        3584/1835008  ( 0.2%) 
+HDR leaf ambient        41/65536        1148/1835008  ( 0.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/12       ( 8.3%) 
+pakfile               [variable]       74442/0        ( 0.0%) 
+physics               [variable]        6441/4194304  ( 0.2%) 
+physics terrain       [variable]           2/1048576  ( 0.0%) 
+
+Level flags = 0
+
+Total triangle count: 108
+Writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+0 seconds elapsed
+
+
+
+Using shader api: shaderapiempty.dll
+materialPath: F:\Steam\steamapps\common\Portal 2\portal2\materials
+Loading Replacement Keys
+File path: F:\Steam\steamapps\common\Portal 2\portal2\cfg\materialsub.cfgLoading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (6441 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 35 texinfos to 23
+Reduced 4 texdatas to 4 (88 bytes to 88)
+Writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+
+nummapplanes:     (   116 / 65536 )
+nummapbrushes:    (    16 /  8192 )
+nummapbrushsides: (    96 / 65536 )
+num_map_overlays: (     0 /   512 )
+nummodels:        (     4 /  1024 )
+num_entities:     (    20 / 16384 )
+
+0 seconds elapsed
+
+
+
+8 threads
+reading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+reading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.prt
+   6 portalclusters
+   8 numportals
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 26
+Average clusters visible: 4
+Building PAS...
+Average clusters audible: 4
+visdatasize:64  compressed from 96
+writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[59 texlights parsed from 'lights.rad']
+
+Loading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+43 faces
+52248 square feet [7523840.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+43 patches before subdivision
+1413 patches after subdivision
+light has _fifty_percent_distance of 1000.000000 but _zero_percent_distance of 0.000000
+1 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 132069, max 214
+transfer lists:   1.0 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(11208, 10839, 10795)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(1317, 1212, 1194)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(152, 132, 129)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(17, 14, 14)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(2, 2, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(0, 0, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0004 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                   4/1024          192/49152    ( 0.4%) 
+brushes                 16/8192          192/98304    ( 0.2%) 
+brushsides              96/65536         768/524288   ( 0.1%) 
+planes                 116/65536        2320/1310720  ( 0.2%) 
+vertexes                87/65536        1044/786432   ( 0.1%) 
+nodes                   36/65536        1152/2097152  ( 0.1%) 
+texinfos                23/12288        1656/884736   ( 0.2%) 
+texdata                  4/2048          128/65536    ( 0.2%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_multiblend          0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                   43/65536        2408/3670016  ( 0.1%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               29/65536        1624/3670016  ( 0.0%) 
+facebrushes              0/0               0/0        ( 0.0%) 
+facebrushlists          43/0             172/0        ( 0.0%) 
+leaves                  41/65536        1312/2097152  ( 0.1%) 
+leaffaces               67/65536         134/131072   ( 0.1%) 
+leafbrushes             28/65536          56/131072   ( 0.0%) 
+areas                    3/256            24/2048     ( 1.2%) 
+surfedges              310/512000       1240/2048000  ( 0.1%) 
+edges                  170/256000        680/1024000  ( 0.1%) 
+LDR worldlights          1/8192          100/819200   ( 0.0%) 
+HDR worldlights          0/8192            0/819200   ( 0.0%) 
+leafwaterdata            0/32768           0/393216   ( 0.0%) 
+waterstrips              4/32768          40/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices            51/65536         102/131072   ( 0.1%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]       30164/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]          64/16777216 ( 0.0%) 
+entdata               [variable]        5815/393216   ( 1.5%) 
+LDR ambient table       41/65536         164/262144   ( 0.1%) 
+HDR ambient table       41/65536         164/262144   ( 0.1%) 
+LDR leaf ambient       128/65536        3584/1835008  ( 0.2%) 
+HDR leaf ambient        41/65536        1148/1835008  ( 0.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/12       ( 8.3%) 
+pakfile               [variable]       74442/0        ( 0.0%) 
+physics               [variable]        6441/4194304  ( 0.2%) 
+physics terrain       [variable]           2/1048576  ( 0.0%) 
+
+Level flags = 0
+
+Total triangle count: 108
+Writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+0 seconds elapsed
+
+
+
+Using shader api: shaderapiempty.dll
+materialPath: F:\Steam\steamapps\common\Portal 2\portal2\materials
+Loading Replacement Keys
+File path: F:\Steam\steamapps\common\Portal 2\portal2\cfg\materialsub.cfgLoading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (6434 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 35 texinfos to 23
+Reduced 4 texdatas to 4 (88 bytes to 88)
+Writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+
+nummapplanes:     (    98 / 65536 )
+nummapbrushes:    (    16 /  8192 )
+nummapbrushsides: (    96 / 65536 )
+num_map_overlays: (     0 /   512 )
+nummodels:        (     4 /  1024 )
+num_entities:     (    22 / 16384 )
+
+0 seconds elapsed
+
+
+
+8 threads
+reading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+reading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.prt
+   6 portalclusters
+   8 numportals
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 26
+Average clusters visible: 4
+Building PAS...
+Average clusters audible: 4
+visdatasize:64  compressed from 96
+writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[59 texlights parsed from 'lights.rad']
+
+Loading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+43 faces
+25660 square feet [3695104.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+43 patches before subdivision
+1413 patches after subdivision
+light has _fifty_percent_distance of 1000.000000 but _zero_percent_distance of 0.000000
+1 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 131905, max 214
+transfer lists:   1.0 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(11166, 10798, 10753)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(1314, 1209, 1191)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(151, 132, 129)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(17, 14, 14)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(2, 2, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(0, 0, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0004 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                   4/1024          192/49152    ( 0.4%) 
+brushes                 16/8192          192/98304    ( 0.2%) 
+brushsides              96/65536         768/524288   ( 0.1%) 
+planes                  98/65536        1960/1310720  ( 0.1%) 
+vertexes                87/65536        1044/786432   ( 0.1%) 
+nodes                   36/65536        1152/2097152  ( 0.1%) 
+texinfos                23/12288        1656/884736   ( 0.2%) 
+texdata                  4/2048          128/65536    ( 0.2%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_multiblend          0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                   43/65536        2408/3670016  ( 0.1%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               29/65536        1624/3670016  ( 0.0%) 
+facebrushes              0/0               0/0        ( 0.0%) 
+facebrushlists          43/0             172/0        ( 0.0%) 
+leaves                  41/65536        1312/2097152  ( 0.1%) 
+leaffaces               67/65536         134/131072   ( 0.1%) 
+leafbrushes             28/65536          56/131072   ( 0.0%) 
+areas                    3/256            24/2048     ( 1.2%) 
+surfedges              310/512000       1240/2048000  ( 0.1%) 
+edges                  170/256000        680/1024000  ( 0.1%) 
+LDR worldlights          1/8192          100/819200   ( 0.0%) 
+HDR worldlights          0/8192            0/819200   ( 0.0%) 
+leafwaterdata            0/32768           0/393216   ( 0.0%) 
+waterstrips              4/32768          40/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices            51/65536         102/131072   ( 0.1%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]       30164/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]          64/16777216 ( 0.0%) 
+entdata               [variable]        6303/393216   ( 1.6%) 
+LDR ambient table       41/65536         164/262144   ( 0.1%) 
+HDR ambient table       41/65536         164/262144   ( 0.1%) 
+LDR leaf ambient        72/65536        2016/1835008  ( 0.1%) 
+HDR leaf ambient        41/65536        1148/1835008  ( 0.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/12       ( 8.3%) 
+pakfile               [variable]       74442/0        ( 0.0%) 
+physics               [variable]        6434/4194304  ( 0.2%) 
+physics terrain       [variable]           2/1048576  ( 0.0%) 
+
+Level flags = 0
+
+Total triangle count: 108
+Writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+0 seconds elapsed
+
+
+
+Using shader api: shaderapiempty.dll
+materialPath: F:\Steam\steamapps\common\Portal 2\portal2\materials
+Loading Replacement Keys
+File path: F:\Steam\steamapps\common\Portal 2\portal2\cfg\materialsub.cfgLoading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (6434 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 35 texinfos to 23
+Reduced 4 texdatas to 4 (88 bytes to 88)
+Writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+
+nummapplanes:     (    98 / 65536 )
+nummapbrushes:    (    16 /  8192 )
+nummapbrushsides: (    96 / 65536 )
+num_map_overlays: (     0 /   512 )
+nummodels:        (     4 /  1024 )
+num_entities:     (    22 / 16384 )
+
+0 seconds elapsed
+
+
+
+8 threads
+reading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+reading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.prt
+   6 portalclusters
+   8 numportals
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 26
+Average clusters visible: 4
+Building PAS...
+Average clusters audible: 4
+visdatasize:64  compressed from 96
+writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[59 texlights parsed from 'lights.rad']
+
+Loading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+43 faces
+25660 square feet [3695104.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+43 patches before subdivision
+1413 patches after subdivision
+light has _fifty_percent_distance of 1000.000000 but _zero_percent_distance of 0.000000
+1 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 131905, max 214
+transfer lists:   1.0 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(11166, 10798, 10753)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(1314, 1209, 1191)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(151, 132, 129)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(17, 14, 14)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(2, 2, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(0, 0, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0004 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                   4/1024          192/49152    ( 0.4%) 
+brushes                 16/8192          192/98304    ( 0.2%) 
+brushsides              96/65536         768/524288   ( 0.1%) 
+planes                  98/65536        1960/1310720  ( 0.1%) 
+vertexes                87/65536        1044/786432   ( 0.1%) 
+nodes                   36/65536        1152/2097152  ( 0.1%) 
+texinfos                23/12288        1656/884736   ( 0.2%) 
+texdata                  4/2048          128/65536    ( 0.2%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_multiblend          0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                   43/65536        2408/3670016  ( 0.1%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               29/65536        1624/3670016  ( 0.0%) 
+facebrushes              0/0               0/0        ( 0.0%) 
+facebrushlists          43/0             172/0        ( 0.0%) 
+leaves                  41/65536        1312/2097152  ( 0.1%) 
+leaffaces               67/65536         134/131072   ( 0.1%) 
+leafbrushes             28/65536          56/131072   ( 0.0%) 
+areas                    3/256            24/2048     ( 1.2%) 
+surfedges              310/512000       1240/2048000  ( 0.1%) 
+edges                  170/256000        680/1024000  ( 0.1%) 
+LDR worldlights          1/8192          100/819200   ( 0.0%) 
+HDR worldlights          0/8192            0/819200   ( 0.0%) 
+leafwaterdata            0/32768           0/393216   ( 0.0%) 
+waterstrips              4/32768          40/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices            51/65536         102/131072   ( 0.1%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]       30164/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]          64/16777216 ( 0.0%) 
+entdata               [variable]        6303/393216   ( 1.6%) 
+LDR ambient table       41/65536         164/262144   ( 0.1%) 
+HDR ambient table       41/65536         164/262144   ( 0.1%) 
+LDR leaf ambient        72/65536        2016/1835008  ( 0.1%) 
+HDR leaf ambient        41/65536        1148/1835008  ( 0.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/12       ( 8.3%) 
+pakfile               [variable]       74442/0        ( 0.0%) 
+physics               [variable]        6434/4194304  ( 0.2%) 
+physics terrain       [variable]           2/1048576  ( 0.0%) 
+
+Level flags = 0
+
+Total triangle count: 108
+Writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+0 seconds elapsed
+
+
+
+Using shader api: shaderapiempty.dll
+materialPath: F:\Steam\steamapps\common\Portal 2\portal2\materials
+Loading Replacement Keys
+File path: F:\Steam\steamapps\common\Portal 2\portal2\cfg\materialsub.cfgLoading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (6434 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 35 texinfos to 23
+Reduced 4 texdatas to 4 (88 bytes to 88)
+Writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+
+nummapplanes:     (    98 / 65536 )
+nummapbrushes:    (    16 /  8192 )
+nummapbrushsides: (    96 / 65536 )
+num_map_overlays: (     0 /   512 )
+nummodels:        (     4 /  1024 )
+num_entities:     (    22 / 16384 )
+
+0 seconds elapsed
+
+
+
+8 threads
+reading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+reading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.prt
+   6 portalclusters
+   8 numportals
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 26
+Average clusters visible: 4
+Building PAS...
+Average clusters audible: 4
+visdatasize:64  compressed from 96
+writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[59 texlights parsed from 'lights.rad']
+
+Loading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+43 faces
+25660 square feet [3695104.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+43 patches before subdivision
+1413 patches after subdivision
+light has _fifty_percent_distance of 1000.000000 but _zero_percent_distance of 0.000000
+1 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 131905, max 214
+transfer lists:   1.0 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(11166, 10798, 10753)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(1314, 1209, 1191)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(151, 132, 129)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(17, 14, 14)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(2, 2, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(0, 0, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0004 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                   4/1024          192/49152    ( 0.4%) 
+brushes                 16/8192          192/98304    ( 0.2%) 
+brushsides              96/65536         768/524288   ( 0.1%) 
+planes                  98/65536        1960/1310720  ( 0.1%) 
+vertexes                87/65536        1044/786432   ( 0.1%) 
+nodes                   36/65536        1152/2097152  ( 0.1%) 
+texinfos                23/12288        1656/884736   ( 0.2%) 
+texdata                  4/2048          128/65536    ( 0.2%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_multiblend          0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                   43/65536        2408/3670016  ( 0.1%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               29/65536        1624/3670016  ( 0.0%) 
+facebrushes              0/0               0/0        ( 0.0%) 
+facebrushlists          43/0             172/0        ( 0.0%) 
+leaves                  41/65536        1312/2097152  ( 0.1%) 
+leaffaces               67/65536         134/131072   ( 0.1%) 
+leafbrushes             28/65536          56/131072   ( 0.0%) 
+areas                    3/256            24/2048     ( 1.2%) 
+surfedges              310/512000       1240/2048000  ( 0.1%) 
+edges                  170/256000        680/1024000  ( 0.1%) 
+LDR worldlights          1/8192          100/819200   ( 0.0%) 
+HDR worldlights          0/8192            0/819200   ( 0.0%) 
+leafwaterdata            0/32768           0/393216   ( 0.0%) 
+waterstrips              4/32768          40/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices            51/65536         102/131072   ( 0.1%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]       30164/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]          64/16777216 ( 0.0%) 
+entdata               [variable]        6302/393216   ( 1.6%) 
+LDR ambient table       41/65536         164/262144   ( 0.1%) 
+HDR ambient table       41/65536         164/262144   ( 0.1%) 
+LDR leaf ambient        72/65536        2016/1835008  ( 0.1%) 
+HDR leaf ambient        41/65536        1148/1835008  ( 0.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/12       ( 8.3%) 
+pakfile               [variable]       74442/0        ( 0.0%) 
+physics               [variable]        6434/4194304  ( 0.2%) 
+physics terrain       [variable]           2/1048576  ( 0.0%) 
+
+Level flags = 0
+
+Total triangle count: 108
+Writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+0 seconds elapsed
+
+
+
+Using shader api: shaderapiempty.dll
+materialPath: F:\Steam\steamapps\common\Portal 2\portal2\materials
+Loading Replacement Keys
+File path: F:\Steam\steamapps\common\Portal 2\portal2\cfg\materialsub.cfgLoading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (6434 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 35 texinfos to 23
+Reduced 4 texdatas to 4 (88 bytes to 88)
+Writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+
+nummapplanes:     (    98 / 65536 )
+nummapbrushes:    (    16 /  8192 )
+nummapbrushsides: (    96 / 65536 )
+num_map_overlays: (     0 /   512 )
+nummodels:        (     4 /  1024 )
+num_entities:     (    22 / 16384 )
+
+0 seconds elapsed
+
+
+
+8 threads
+reading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+reading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.prt
+   6 portalclusters
+   8 numportals
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 26
+Average clusters visible: 4
+Building PAS...
+Average clusters audible: 4
+visdatasize:64  compressed from 96
+writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[59 texlights parsed from 'lights.rad']
+
+Loading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+43 faces
+25660 square feet [3695104.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+43 patches before subdivision
+1413 patches after subdivision
+light has _fifty_percent_distance of 1000.000000 but _zero_percent_distance of 0.000000
+1 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 131905, max 214
+transfer lists:   1.0 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(11166, 10798, 10753)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(1314, 1209, 1191)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(151, 132, 129)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(17, 14, 14)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(2, 2, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(0, 0, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0004 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                   4/1024          192/49152    ( 0.4%) 
+brushes                 16/8192          192/98304    ( 0.2%) 
+brushsides              96/65536         768/524288   ( 0.1%) 
+planes                  98/65536        1960/1310720  ( 0.1%) 
+vertexes                87/65536        1044/786432   ( 0.1%) 
+nodes                   36/65536        1152/2097152  ( 0.1%) 
+texinfos                23/12288        1656/884736   ( 0.2%) 
+texdata                  4/2048          128/65536    ( 0.2%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_multiblend          0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                   43/65536        2408/3670016  ( 0.1%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               29/65536        1624/3670016  ( 0.0%) 
+facebrushes              0/0               0/0        ( 0.0%) 
+facebrushlists          43/0             172/0        ( 0.0%) 
+leaves                  41/65536        1312/2097152  ( 0.1%) 
+leaffaces               67/65536         134/131072   ( 0.1%) 
+leafbrushes             28/65536          56/131072   ( 0.0%) 
+areas                    3/256            24/2048     ( 1.2%) 
+surfedges              310/512000       1240/2048000  ( 0.1%) 
+edges                  170/256000        680/1024000  ( 0.1%) 
+LDR worldlights          1/8192          100/819200   ( 0.0%) 
+HDR worldlights          0/8192            0/819200   ( 0.0%) 
+leafwaterdata            0/32768           0/393216   ( 0.0%) 
+waterstrips              4/32768          40/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices            51/65536         102/131072   ( 0.1%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]       30164/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]          64/16777216 ( 0.0%) 
+entdata               [variable]        6302/393216   ( 1.6%) 
+LDR ambient table       41/65536         164/262144   ( 0.1%) 
+HDR ambient table       41/65536         164/262144   ( 0.1%) 
+LDR leaf ambient        72/65536        2016/1835008  ( 0.1%) 
+HDR leaf ambient        41/65536        1148/1835008  ( 0.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/12       ( 8.3%) 
+pakfile               [variable]       74442/0        ( 0.0%) 
+physics               [variable]        6434/4194304  ( 0.2%) 
+physics terrain       [variable]           2/1048576  ( 0.0%) 
+
+Level flags = 0
+
+Total triangle count: 108
+Writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+0 seconds elapsed
+
+
+
+Using shader api: shaderapiempty.dll
+materialPath: F:\Steam\steamapps\common\Portal 2\portal2\materials
+Loading Replacement Keys
+File path: F:\Steam\steamapps\common\Portal 2\portal2\cfg\materialsub.cfgLoading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (2688 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 9 texinfos to 7
+Reduced 3 texdatas to 3 (69 bytes to 69)
+Writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+
+nummapplanes:     (    46 / 65536 )
+nummapbrushes:    (     7 /  8192 )
+nummapbrushsides: (    42 / 65536 )
+num_map_overlays: (     0 /   512 )
+nummodels:        (     1 /  1024 )
+num_entities:     (    15 / 16384 )
+
+0 seconds elapsed
+
+
+
+8 threads
+reading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+reading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.prt
+   5 portalclusters
+   8 numportals
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 25
+Average clusters visible: 5
+Building PAS...
+Average clusters audible: 5
+visdatasize:54  compressed from 80
+writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[59 texlights parsed from 'lights.rad']
+
+Loading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+25 faces
+25628 square feet [3690496.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+25 patches before subdivision
+1395 patches after subdivision
+light has _fifty_percent_distance of 1000.000000 but _zero_percent_distance of 0.000000
+1 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 131905, max 214
+transfer lists:   1.0 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(11166, 10798, 10753)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(1314, 1209, 1191)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(151, 132, 129)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(17, 14, 14)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(2, 2, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(0, 0, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0004 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                   1/1024           48/49152    ( 0.1%) 
+brushes                  7/8192           84/98304    ( 0.1%) 
+brushsides              42/65536         336/524288   ( 0.1%) 
+planes                  46/65536         920/1310720  ( 0.1%) 
+vertexes                55/65536         660/786432   ( 0.1%) 
+nodes                   11/65536         352/2097152  ( 0.0%) 
+texinfos                 7/12288         504/884736   ( 0.1%) 
+texdata                  3/2048           96/65536    ( 0.1%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_multiblend          0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                   25/65536        1400/3670016  ( 0.0%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               11/65536         616/3670016  ( 0.0%) 
+facebrushes              0/0               0/0        ( 0.0%) 
+facebrushlists          25/0             100/0        ( 0.0%) 
+leaves                  13/65536         416/2097152  ( 0.0%) 
+leaffaces               49/65536          98/131072   ( 0.1%) 
+leafbrushes             18/65536          36/131072   ( 0.0%) 
+areas                    2/256            16/2048     ( 0.8%) 
+surfedges              166/512000        664/2048000  ( 0.0%) 
+edges                   98/256000        392/1024000  ( 0.0%) 
+LDR worldlights          1/8192          100/819200   ( 0.0%) 
+HDR worldlights          0/8192            0/819200   ( 0.0%) 
+leafwaterdata            0/32768           0/393216   ( 0.0%) 
+waterstrips              4/32768          40/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices            51/65536         102/131072   ( 0.1%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]       30164/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]          54/16777216 ( 0.0%) 
+entdata               [variable]        4480/393216   ( 1.1%) 
+LDR ambient table       13/65536          52/262144   ( 0.0%) 
+HDR ambient table       13/65536          52/262144   ( 0.0%) 
+LDR leaf ambient        47/65536        1316/1835008  ( 0.1%) 
+HDR leaf ambient        13/65536         364/1835008  ( 0.0%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/12       ( 8.3%) 
+pakfile               [variable]       74442/0        ( 0.0%) 
+physics               [variable]        2688/4194304  ( 0.1%) 
+physics terrain       [variable]           2/1048576  ( 0.0%) 
+
+Level flags = 0
+
+Total triangle count: 72
+Writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+0 seconds elapsed
+
+
+
+Using shader api: shaderapiempty.dll
+materialPath: F:\Steam\steamapps\common\Portal 2\portal2\materials
+Loading Replacement Keys
+File path: F:\Steam\steamapps\common\Portal 2\portal2\cfg\materialsub.cfgLoading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (1) (6467 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 20 texinfos to 13
+Reduced 4 texdatas to 4 (88 bytes to 88)
+Writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+
+nummapplanes:     (   100 / 65536 )
+nummapbrushes:    (    19 /  8192 )
+nummapbrushsides: (   114 / 65536 )
+num_map_overlays: (     0 /   512 )
+nummodels:        (     4 /  1024 )
+num_entities:     (    22 / 16384 )
+
+1 second elapsed
+
+
+
+8 threads
+reading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+reading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.prt
+   8 portalclusters
+  11 numportals
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 34
+Average clusters visible: 4
+Building PAS...
+Average clusters audible: 4
+visdatasize:84  compressed from 128
+writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[59 texlights parsed from 'lights.rad']
+
+Loading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+43 faces
+33580060 square feet [4835528704.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+43 patches before subdivision
+1413 patches after subdivision
+light has _fifty_percent_distance of 1000.000000 but _zero_percent_distance of 0.000000
+1 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 131905, max 214
+transfer lists:   1.0 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(11166, 10798, 10753)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(1314, 1209, 1191)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(151, 132, 129)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(17, 14, 14)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(2, 2, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(0, 0, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0004 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                   4/1024          192/49152    ( 0.4%) 
+brushes                 19/8192          228/98304    ( 0.2%) 
+brushsides             114/65536         912/524288   ( 0.2%) 
+planes                 100/65536        2000/1310720  ( 0.2%) 
+vertexes                93/65536        1116/786432   ( 0.1%) 
+nodes                   45/65536        1440/2097152  ( 0.1%) 
+texinfos                13/12288         936/884736   ( 0.1%) 
+texdata                  4/2048          128/65536    ( 0.2%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_multiblend          0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                   43/65536        2408/3670016  ( 0.1%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               29/65536        1624/3670016  ( 0.0%) 
+facebrushes              0/0               0/0        ( 0.0%) 
+facebrushlists          43/0             172/0        ( 0.0%) 
+leaves                  50/65536        1600/2097152  ( 0.1%) 
+leaffaces               67/65536         134/131072   ( 0.1%) 
+leafbrushes             35/65536          70/131072   ( 0.1%) 
+areas                    3/256            24/2048     ( 1.2%) 
+surfedges              310/512000       1240/2048000  ( 0.1%) 
+edges                  170/256000        680/1024000  ( 0.1%) 
+LDR worldlights          1/8192          100/819200   ( 0.0%) 
+HDR worldlights          0/8192            0/819200   ( 0.0%) 
+leafwaterdata            0/32768           0/393216   ( 0.0%) 
+waterstrips              4/32768          40/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices            51/65536         102/131072   ( 0.1%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]       30164/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]          84/16777216 ( 0.0%) 
+entdata               [variable]        6238/393216   ( 1.6%) 
+LDR ambient table       50/65536         200/262144   ( 0.1%) 
+HDR ambient table       50/65536         200/262144   ( 0.1%) 
+LDR leaf ambient        86/65536        2408/1835008  ( 0.1%) 
+HDR leaf ambient        50/65536        1400/1835008  ( 0.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/12       ( 8.3%) 
+pakfile               [variable]       74442/0        ( 0.0%) 
+physics               [variable]        6467/4194304  ( 0.2%) 
+physics terrain       [variable]           2/1048576  ( 0.0%) 
+
+Level flags = 0
+
+Total triangle count: 108
+Writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+0 seconds elapsed
+
+
+
+Using shader api: shaderapiempty.dll
+materialPath: F:\Steam\steamapps\common\Portal 2\portal2\materials
+Loading Replacement Keys
+File path: F:\Steam\steamapps\common\Portal 2\portal2\cfg\materialsub.cfgLoading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (1) (6467 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 20 texinfos to 13
+Reduced 4 texdatas to 4 (88 bytes to 88)
+Writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+
+nummapplanes:     (   100 / 65536 )
+nummapbrushes:    (    19 /  8192 )
+nummapbrushsides: (   114 / 65536 )
+num_map_overlays: (     0 /   512 )
+nummodels:        (     4 /  1024 )
+num_entities:     (    22 / 16384 )
+
+1 second elapsed
+
+
+
+8 threads
+reading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+reading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.prt
+   8 portalclusters
+  11 numportals
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 34
+Average clusters visible: 4
+Building PAS...
+Average clusters audible: 4
+visdatasize:84  compressed from 128
+writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[59 texlights parsed from 'lights.rad']
+
+Loading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+43 faces
+33580060 square feet [4835528704.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+43 patches before subdivision
+1413 patches after subdivision
+light has _fifty_percent_distance of 1000.000000 but _zero_percent_distance of 0.000000
+1 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 131905, max 214
+transfer lists:   1.0 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(11166, 10798, 10753)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(1314, 1209, 1191)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(151, 132, 129)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(17, 14, 14)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(2, 2, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(0, 0, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0004 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                   4/1024          192/49152    ( 0.4%) 
+brushes                 19/8192          228/98304    ( 0.2%) 
+brushsides             114/65536         912/524288   ( 0.2%) 
+planes                 100/65536        2000/1310720  ( 0.2%) 
+vertexes                93/65536        1116/786432   ( 0.1%) 
+nodes                   45/65536        1440/2097152  ( 0.1%) 
+texinfos                13/12288         936/884736   ( 0.1%) 
+texdata                  4/2048          128/65536    ( 0.2%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_multiblend          0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                   43/65536        2408/3670016  ( 0.1%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               29/65536        1624/3670016  ( 0.0%) 
+facebrushes              0/0               0/0        ( 0.0%) 
+facebrushlists          43/0             172/0        ( 0.0%) 
+leaves                  50/65536        1600/2097152  ( 0.1%) 
+leaffaces               67/65536         134/131072   ( 0.1%) 
+leafbrushes             35/65536          70/131072   ( 0.1%) 
+areas                    3/256            24/2048     ( 1.2%) 
+surfedges              310/512000       1240/2048000  ( 0.1%) 
+edges                  170/256000        680/1024000  ( 0.1%) 
+LDR worldlights          1/8192          100/819200   ( 0.0%) 
+HDR worldlights          0/8192            0/819200   ( 0.0%) 
+leafwaterdata            0/32768           0/393216   ( 0.0%) 
+waterstrips              4/32768          40/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices            51/65536         102/131072   ( 0.1%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]       30164/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]          84/16777216 ( 0.0%) 
+entdata               [variable]        6238/393216   ( 1.6%) 
+LDR ambient table       50/65536         200/262144   ( 0.1%) 
+HDR ambient table       50/65536         200/262144   ( 0.1%) 
+LDR leaf ambient        86/65536        2408/1835008  ( 0.1%) 
+HDR leaf ambient        50/65536        1400/1835008  ( 0.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/12       ( 8.3%) 
+pakfile               [variable]       74442/0        ( 0.0%) 
+physics               [variable]        6467/4194304  ( 0.2%) 
+physics terrain       [variable]           2/1048576  ( 0.0%) 
+
+Level flags = 0
+
+Total triangle count: 108
+Writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+0 seconds elapsed
+
+
+
+Using shader api: shaderapiempty.dll
+materialPath: F:\Steam\steamapps\common\Portal 2\portal2\materials
+Loading Replacement Keys
+File path: F:\Steam\steamapps\common\Portal 2\portal2\cfg\materialsub.cfgLoading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (1) (7020 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 26 texinfos to 15
+Reduced 5 texdatas to 5 (104 bytes to 104)
+Writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+
+nummapplanes:     (   116 / 65536 )
+nummapbrushes:    (    20 /  8192 )
+nummapbrushsides: (   120 / 65536 )
+num_map_overlays: (     0 /   512 )
+nummodels:        (     5 /  1024 )
+num_entities:     (    23 / 16384 )
+
+1 second elapsed
+
+
+
+8 threads
+reading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+reading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.prt
+   8 portalclusters
+  11 numportals
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 34
+Average clusters visible: 4
+Building PAS...
+Average clusters audible: 4
+visdatasize:84  compressed from 128
+writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[59 texlights parsed from 'lights.rad']
+
+Loading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+45 faces
+33585524 square feet [4836315136.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+45 patches before subdivision
+1415 patches after subdivision
+light has _fifty_percent_distance of 1000.000000 but _zero_percent_distance of 0.000000
+1 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 132228, max 214
+transfer lists:   1.0 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(11213, 10843, 10799)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(1318, 1213, 1195)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(152, 132, 129)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(17, 14, 14)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(2, 2, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(0, 0, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0004 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                   5/1024          240/49152    ( 0.5%) 
+brushes                 20/8192          240/98304    ( 0.2%) 
+brushsides             120/65536         960/524288   ( 0.2%) 
+planes                 116/65536        2320/1310720  ( 0.2%) 
+vertexes               101/65536        1212/786432   ( 0.2%) 
+nodes                   51/65536        1632/2097152  ( 0.1%) 
+texinfos                15/12288        1080/884736   ( 0.1%) 
+texdata                  5/2048          160/65536    ( 0.2%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_multiblend          0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                   45/65536        2520/3670016  ( 0.1%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               31/65536        1736/3670016  ( 0.0%) 
+facebrushes              0/0               0/0        ( 0.0%) 
+facebrushlists          45/0             180/0        ( 0.0%) 
+leaves                  57/65536        1824/2097152  ( 0.1%) 
+leaffaces               69/65536         138/131072   ( 0.1%) 
+leafbrushes             36/65536          72/131072   ( 0.1%) 
+areas                    3/256            24/2048     ( 1.2%) 
+surfedges              326/512000       1304/2048000  ( 0.1%) 
+edges                  186/256000        744/1024000  ( 0.1%) 
+LDR worldlights          1/8192          100/819200   ( 0.0%) 
+HDR worldlights          0/8192            0/819200   ( 0.0%) 
+leafwaterdata            0/32768           0/393216   ( 0.0%) 
+waterstrips              4/32768          40/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices            51/65536         102/131072   ( 0.1%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]       30164/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]          84/16777216 ( 0.0%) 
+entdata               [variable]        6582/393216   ( 1.7%) 
+LDR ambient table       57/65536         228/262144   ( 0.1%) 
+HDR ambient table       57/65536         228/262144   ( 0.1%) 
+LDR leaf ambient       163/65536        4564/1835008  ( 0.2%) 
+HDR leaf ambient        57/65536        1596/1835008  ( 0.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/12       ( 8.3%) 
+pakfile               [variable]       74442/0        ( 0.0%) 
+physics               [variable]        7020/4194304  ( 0.2%) 
+physics terrain       [variable]           2/1048576  ( 0.0%) 
+
+Level flags = 0
+
+Total triangle count: 112
+Writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+0 seconds elapsed
+
+
+
+Using shader api: shaderapiempty.dll
+materialPath: F:\Steam\steamapps\common\Portal 2\portal2\materials
+Loading Replacement Keys
+File path: F:\Steam\steamapps\common\Portal 2\portal2\cfg\materialsub.cfgLoading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (1) (7018 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 26 texinfos to 14
+Reduced 5 texdatas to 5 (104 bytes to 104)
+Writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+
+nummapplanes:     (   118 / 65536 )
+nummapbrushes:    (    20 /  8192 )
+nummapbrushsides: (   120 / 65536 )
+num_map_overlays: (     0 /   512 )
+nummodels:        (     5 /  1024 )
+num_entities:     (    23 / 16384 )
+
+1 second elapsed
+
+
+
+8 threads
+reading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+reading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.prt
+   8 portalclusters
+  11 numportals
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 34
+Average clusters visible: 4
+Building PAS...
+Average clusters audible: 4
+visdatasize:84  compressed from 128
+writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[59 texlights parsed from 'lights.rad']
+
+Loading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+45 faces
+33580744 square feet [4835627008.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+45 patches before subdivision
+1415 patches after subdivision
+light has _fifty_percent_distance of 1000.000000 but _zero_percent_distance of 0.000000
+1 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 132195, max 214
+transfer lists:   1.0 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(11195, 10825, 10781)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(1318, 1213, 1195)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(152, 132, 129)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(17, 14, 14)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(2, 2, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(0, 0, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0004 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                   5/1024          240/49152    ( 0.5%) 
+brushes                 20/8192          240/98304    ( 0.2%) 
+brushsides             120/65536         960/524288   ( 0.2%) 
+planes                 118/65536        2360/1310720  ( 0.2%) 
+vertexes               101/65536        1212/786432   ( 0.2%) 
+nodes                   51/65536        1632/2097152  ( 0.1%) 
+texinfos                14/12288        1008/884736   ( 0.1%) 
+texdata                  5/2048          160/65536    ( 0.2%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_multiblend          0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                   45/65536        2520/3670016  ( 0.1%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               31/65536        1736/3670016  ( 0.0%) 
+facebrushes              0/0               0/0        ( 0.0%) 
+facebrushlists          45/0             180/0        ( 0.0%) 
+leaves                  57/65536        1824/2097152  ( 0.1%) 
+leaffaces               69/65536         138/131072   ( 0.1%) 
+leafbrushes             36/65536          72/131072   ( 0.1%) 
+areas                    3/256            24/2048     ( 1.2%) 
+surfedges              326/512000       1304/2048000  ( 0.1%) 
+edges                  186/256000        744/1024000  ( 0.1%) 
+LDR worldlights          1/8192          100/819200   ( 0.0%) 
+HDR worldlights          0/8192            0/819200   ( 0.0%) 
+leafwaterdata            0/32768           0/393216   ( 0.0%) 
+waterstrips              4/32768          40/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices            51/65536         102/131072   ( 0.1%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]       30164/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]          84/16777216 ( 0.0%) 
+entdata               [variable]        6582/393216   ( 1.7%) 
+LDR ambient table       57/65536         228/262144   ( 0.1%) 
+HDR ambient table       57/65536         228/262144   ( 0.1%) 
+LDR leaf ambient       159/65536        4452/1835008  ( 0.2%) 
+HDR leaf ambient        57/65536        1596/1835008  ( 0.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/12       ( 8.3%) 
+pakfile               [variable]       74442/0        ( 0.0%) 
+physics               [variable]        7018/4194304  ( 0.2%) 
+physics terrain       [variable]           2/1048576  ( 0.0%) 
+
+Level flags = 0
+
+Total triangle count: 112
+Writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+0 seconds elapsed
+
+
+
+Using shader api: shaderapiempty.dll
+materialPath: F:\Steam\steamapps\common\Portal 2\portal2\materials
+Loading Replacement Keys
+File path: F:\Steam\steamapps\common\Portal 2\portal2\cfg\materialsub.cfgLoading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.vmf
+ConVarRef gpu_level doesn't point to an existing ConVar
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.prt...Building visibility clusters...
+done (0)
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (1) (7018 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 26 texinfos to 14
+Reduced 5 texdatas to 5 (104 bytes to 104)
+Writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+
+nummapplanes:     (   118 / 65536 )
+nummapbrushes:    (    20 /  8192 )
+nummapbrushsides: (   120 / 65536 )
+num_map_overlays: (     0 /   512 )
+nummodels:        (     5 /  1024 )
+num_entities:     (    25 / 16384 )
+
+1 second elapsed
+
+
+
+8 threads
+reading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+reading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.prt
+   8 portalclusters
+  11 numportals
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Optimized: 0 visible clusters (0.00%)
+Total clusters visible: 34
+Average clusters visible: 4
+Building PAS...
+Average clusters audible: 4
+visdatasize:84  compressed from 128
+writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[59 texlights parsed from 'lights.rad']
+
+Loading f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+45 faces
+33580744 square feet [4835627008.00 square inches]
+0 Displacements
+0 Square Feet [0.00 Square Inches]
+45 patches before subdivision
+1415 patches after subdivision
+light has _fifty_percent_distance of 1000.000000 but _zero_percent_distance of 0.000000
+1 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 132195, max 214
+transfer lists:   1.0 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(11195, 10825, 10781)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(1318, 1213, 1195)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(152, 132, 129)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(17, 14, 14)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(2, 2, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(0, 0, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0004 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+0 of 0 (0% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                   5/1024          240/49152    ( 0.5%) 
+brushes                 20/8192          240/98304    ( 0.2%) 
+brushsides             120/65536         960/524288   ( 0.2%) 
+planes                 118/65536        2360/1310720  ( 0.2%) 
+vertexes               101/65536        1212/786432   ( 0.2%) 
+nodes                   51/65536        1632/2097152  ( 0.1%) 
+texinfos                14/12288        1008/884736   ( 0.1%) 
+texdata                  5/2048          160/65536    ( 0.2%) 
+dispinfos                0/0               0/0        ( 0.0%) 
+disp_verts               0/0               0/0        ( 0.0%) 
+disp_tris                0/0               0/0        ( 0.0%) 
+disp_multiblend          0/0               0/0        ( 0.0%) 
+disp_lmsamples           0/0               0/0        ( 0.0%) 
+faces                   45/65536        2520/3670016  ( 0.1%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces               31/65536        1736/3670016  ( 0.0%) 
+facebrushes              0/0               0/0        ( 0.0%) 
+facebrushlists          45/0             180/0        ( 0.0%) 
+leaves                  57/65536        1824/2097152  ( 0.1%) 
+leaffaces               69/65536         138/131072   ( 0.1%) 
+leafbrushes             36/65536          72/131072   ( 0.1%) 
+areas                    3/256            24/2048     ( 1.2%) 
+surfedges              326/512000       1304/2048000  ( 0.1%) 
+edges                  186/256000        744/1024000  ( 0.1%) 
+LDR worldlights          1/8192          100/819200   ( 0.0%) 
+HDR worldlights          0/8192            0/819200   ( 0.0%) 
+leafwaterdata            0/32768           0/393216   ( 0.0%) 
+waterstrips              4/32768          40/327680   ( 0.0%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices            51/65536         102/131072   ( 0.1%) 
+cubemapsamples           0/1024            0/16384    ( 0.0%) 
+overlays                 0/512             0/180224   ( 0.0%) 
+LDR lightdata         [variable]       30164/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]          84/16777216 ( 0.0%) 
+entdata               [variable]        6945/393216   ( 1.8%) 
+LDR ambient table       57/65536         228/262144   ( 0.1%) 
+HDR ambient table       57/65536         228/262144   ( 0.1%) 
+LDR leaf ambient       159/65536        4452/1835008  ( 0.2%) 
+HDR leaf ambient        57/65536        1596/1835008  ( 0.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/12       ( 8.3%) 
+static props          [variable]           1/12       ( 8.3%) 
+pakfile               [variable]       74442/0        ( 0.0%) 
+physics               [variable]        7018/4194304  ( 0.2%) 
+physics terrain       [variable]           2/1048576  ( 0.0%) 
+
+Level flags = 0
+
+Total triangle count: 112
+Writing f:\git\portal2-vscript-library\sdk_content\maps\zoo_raycast.bsp
+0 seconds elapsed

@@ -18,6 +18,12 @@ function schedule_call(code)
     EntFireByHandle(self, "RunScriptCode", code, beat_time, null, null);
 }
 
+function callback(code)
+{
+    // Callback a script function
+    EntFireByHandle(self, "RunScriptCode", code, 0, null, null);
+}
+
 //  ------------------------------------------------------------------------
 //  [TeamSpen210]                  Math is math
 //  ------------------------------------------------------------------------
