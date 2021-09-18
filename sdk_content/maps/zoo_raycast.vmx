@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8973"
-	"mapversion" "71"
+	"mapversion" "74"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "71"
+	"mapversion" "74"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -1590,7 +1590,7 @@ entity
 	"framerate" "0"
 	"framestart" "0"
 	"hdrcolorscale" "1.0"
-	"LaserTarget" "rcb_target"
+	"LaserTarget" "@rcb_target"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"noiseamplitude" "0"
@@ -1599,11 +1599,11 @@ entity
 	"renderfx" "0"
 	"rendermode" "1"
 	"spawnflags" "1"
-	"targetname" "rcb_beam"
+	"targetname" "@rcb_beam"
 	"texture" "sprites/grav_beam.vmt"
 	"texturescroll" "35"
 	"width" "8"
-	"origin" "-160 96 16"
+	"origin" "-160 80 16"
 	editor
 	{
 		"color" "200 200 0"
@@ -1617,53 +1617,14 @@ entity
 	"id" "505"
 	"classname" "info_target"
 	"angles" "0 0 0"
-	"targetname" "rcb_target"
-	"origin" "-160 112 16"
+	"targetname" "@rcb_target"
+	"origin" "-160 96 16"
 	editor
 	{
 		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 7500]"
-	}
-}
-entity
-{
-	"id" "557"
-	"classname" "point_template"
-	"angles" "0 0 0"
-	"spawnflags" "2"
-	"targetname" "rcb_temp"
-	"template01" "rcb_beam"
-	"template02" "rcb_target"
-	"origin" "-160 80 16"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 8000]"
-	}
-}
-entity
-{
-	"id" "890"
-	"classname" "env_entity_maker"
-	"angles" "0 0 0"
-	"entitytemplate" "rcb_temp"
-	"postspawndirection" "0 0 0"
-	"postspawndirectionvariance" "0"
-	"postspawninheritangles" "0"
-	"postspawnspeed" "0"
-	"spawnflags" "0"
-	"targetname" "@rcb_maker"
-	"origin" "-160 80 40"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 8500]"
 	}
 }
 entity

@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8973"
-	"mapversion" "72"
+	"mapversion" "75"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "72"
+	"mapversion" "75"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -1590,7 +1590,7 @@ entity
 	"framerate" "0"
 	"framestart" "0"
 	"hdrcolorscale" "1.0"
-	"LaserTarget" "rcb_target"
+	"LaserTarget" "@rcb_target"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"noiseamplitude" "0"
