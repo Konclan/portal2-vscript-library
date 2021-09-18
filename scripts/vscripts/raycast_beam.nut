@@ -10,11 +10,11 @@
 IncludeScript("utils.nut");
 
 // Beam ents
-BEAM <- {};
-TRACE <- [];
+RCB_BEAM <- {};
+RCB_TRACE <- [];
 
-FAR <- 32768
-LIMIT <- 16
+RCB_FAR <- 32768;
+RCB_TRACE_LIMIT <- 16;
 
 // List of open portals and portal IDs.
 ::rcb_portal_list <- null;
@@ -25,39 +25,36 @@ LIMIT <- 16
 ::rcb_beamcount <- 0;
 
 // What function do we run after finishing tracing
-callback_function <- "";
+rcb_callback_function <- "";
 
 function raycast_beam_init() {
-    // Set up the enveloping func_portal_detector(s)
+    // Initialise map entities.
+    // Called 1 second after the map loads.
+
+    // Set up the enveloping func_portal_detector(s),
     // to keep track of the open-ness of portals.
-    // Detectors with name "@sendtor_portal_detect0" detect ID 0 (SP),
-    // ones with name "@sendtor_portal_detect1" detect ID 1 (Atlas),
-    // "@sendtor_portal_detect2" detect ID 2 (P-Body) etc.
-    local ent = Entities.FindByName(null, "@rcb_portal_detect*");
-    while(ent != null) {
+    // Detectors with name "@rcb_portal_detect0" detect ID 0 (SP),
+    // ones with name "@rcb_portal_detect1" detect ID 1 (Atlas),
+    // "@rcb_portal_detect2" detect ID 2 (P-Body) etc.
 
-        local id = ent.GetName().slice(18);
-        if(id == "") { id = "0"; }
-        // printl("Ent: " + ent.GetName());
-        // printl("Id: " + id)
+    if(!::rcb_triggers) {
+        local ent = Entities.FindByName(null, "@rcb_portal_detect*");
+        while (ent != null) {
 
-        // printl("triggers: " + ::rcb_triggers)
-        if (::rcb_triggers == false) {
-            EntFireByHandle(ent, "AddOutput", 
-                "OnStartTouchPortal !activator:RunScriptCode:" + "rcb_active <- " + id, 
-                0, null, null);
-            EntFireByHandle(ent, "AddOutput", 
-                "OnEndTouchPortal !activator:RunScriptCode:"+ "rcb_active <- -1", 
-                0, null, null);
+            local id = ent.GetName().slice(18);
+            if (id == "") {
+                id = "0";
+            }
+            
+            EntFireByHandle(ent, "AddOutput",
+                    "OnStartTouchPortal !activator:RunScriptCode:" +
+                    "rcb_active <- " + id, 0, null, null);
+            EntFireByHandle(ent, "AddOutput",
+                    "OnEndTouchPortal !activator:RunScriptCode:" +
+                    "rcb_active <- -1", 0, null, null);
+
+            ent = Entities.FindByName(ent, "@rcb_portal_detect*");
         }
-        EntFireByHandle(ent, "AddOutput", "OnStartTouchPortal " 
-        + self.GetName() + ":RunScriptCode:" + "raycast_beam_portal_updated", 
-        0, null, null);
-        EntFireByHandle(ent, "AddOutput", "OnEndTouchPortal " 
-        + self.GetName() + ":RunScriptCode:" + "raycast_beam_portal_updated", 
-        0, null, null);
-
-        ent = Entities.FindByName(ent, "@rcb_portal_detect*");
     }
     ::rcb_triggers = true
 }
@@ -101,33 +98,31 @@ function raycast_beam_init_beams() {
     target.SetOrigin(target.GetOrigin() + target.GetUpVector() * -16);
     sprite.SetOrigin(target.GetOrigin() + sprite.GetUpVector() * -16);
 
-    BEAM = {beam = beam, target = target, sprite = sprite, extent = -1, trace_hit = Vector(0, 0, 0)};
+    RCB_BEAM = {beam = beam, target = target, sprite = sprite, extent = -1, trace_hit = Vector(0, 0, 0)};
 
     ::rcb_beamcount++
 }
 
-function raycast_beam_trace_new(start_vec, angle, portals, callback) {
-    callback_function = callback;
+function raycast_beam_trace(start_vec, angle, portals, callback, cont) {
+    rcb_callback_function = callback;
 
-    if (BEAM.len() == 0) {
+    if (RCB_BEAM.len() == 0) {
         raycast_beam_init_beams()
     }
+    
+    if (!cont) {
+        RCB_BEAM.extent = -1
+        RCB_TRACE <- []
+    }
 
-    BEAM.extent = -1
-    TRACE <- []
-    raycast_beam_position_emitter(start_vec, angle);
-    schedule_call("raycast_beam_step("+portals+")");
-}
-
-function raycast_beam_trace_continue(start_vec, angle, portals, callback) {
     raycast_beam_position_emitter(start_vec, angle);
     schedule_call("raycast_beam_step("+portals+")");
 }
 
 function raycast_beam_step(portals) {
-    BEAM.trace_hit = BEAM.sprite.GetOrigin();
-    // DebugDrawLine(BEAM.beam.GetOrigin(), BEAM.trace_hit, 255, 255, 255, false, 10)
-    raycast_beam_store(BEAM.beam.GetOrigin(), BEAM.trace_hit);
+    RCB_BEAM.trace_hit = RCB_BEAM.sprite.GetOrigin();
+    // DebugDrawLine(RCB_BEAM.beam.GetOrigin(), RCB_BEAM.trace_hit, 255, 255, 255, false, 10)
+    raycast_beam_store(RCB_BEAM.beam.GetOrigin(), RCB_BEAM.trace_hit);
     
     // Do we trace through portals
     if (portals) {
@@ -135,18 +130,18 @@ function raycast_beam_step(portals) {
         return;
     }
 
-    callback(callback_function)
+    callback(rcb_callback_function)
 }
 
 function raycast_beam_position_emitter(origin, angle) {
-    local end_vec = origin + rotate(Vector(FAR, 0, 0), angle)
-    BEAM.beam.SetOrigin(origin);
-    BEAM.target.SetOrigin(end_vec);
+    local end_vec = origin + rotate(Vector(RCB_FAR, 0, 0), angle)
+    RCB_BEAM.beam.SetOrigin(origin);
+    RCB_BEAM.target.SetOrigin(end_vec);
 }
 
 function raycast_beam_store(start_vec, end_vec) {
     // DebugDrawLine(start_vec, end_vec, 255, 255, 255, false, 10);
-    TRACE.append({origin = start_vec, trace_hit = end_vec, index = TRACE.len()})
+    RCB_TRACE.append({origin = start_vec, trace_hit = end_vec, index = RCB_TRACE.len()})
 }
 
 //  ------------------------------------------------------------------------
@@ -165,21 +160,21 @@ function raycast_beam_portal_extent(portal_in, portal_out)
     local angles_from = portal_in.GetAngles();
     local angles_to = portal_out.GetAngles();
 
-    local dir = vector_resize(BEAM.target.GetOrigin() -
+    local dir = vector_resize(RCB_BEAM.target.GetOrigin() -
                               self.GetOrigin(), 2);
     dir = unrotate(dir, angles_from);
     dir.x *= -1;
     dir.y *= -1;
     dir = rotate(dir, angles_to);
-    local dir_far = dir * FAR;
+    local dir_far = dir * RCB_FAR;
 
-    local pos = BEAM.sprite.GetOrigin();
+    local pos = RCB_BEAM.sprite.GetOrigin();
     pos = unrotate(pos - offset_from, angles_from);
     pos.x *= -1;
     pos.y *= -1;
     pos = rotate(pos, angles_to) + offset_to;
-    BEAM.beam.SetOrigin(pos + dir);
-    BEAM.target.SetOrigin(pos + dir_far);
+    RCB_BEAM.beam.SetOrigin(pos + dir);
+    RCB_BEAM.target.SetOrigin(pos + dir_far);
 }
 
 function raycast_beam_portal_get_id(portal)
@@ -236,22 +231,22 @@ function raycast_beam_portal_find_partner(portal)
 
 function raycast_beam_portal_trace()
 {
-    if (BEAM.extent < LIMIT) {
-        BEAM.extent++
+    if (RCB_BEAM.extent < RCB_TRACE_LIMIT) {
+        RCB_BEAM.extent++
     }
     else {
         return;
     }
 
-    // printl("Extent: " + BEAM.extent)
+    // printl("Extent: " + RCB_BEAM.extent)
 
     // Check if the tracing beam hits a portal.
-    BEAM.trace_hit = BEAM.sprite.GetOrigin();
+    RCB_BEAM.trace_hit = RCB_BEAM.sprite.GetOrigin();
 
-    // printl("Tracing from: " + BEAM.beam.GetOrigin() + "to" + BEAM.trace_hit);
-    // if (BEAM.extent > 0 ) {DebugDrawLine(BEAM.beam.GetOrigin(), BEAM.trace_hit, 255, 255, 255, false, 10);}
-    if (BEAM.extent > 0 ) {
-        raycast_beam_store(BEAM.beam.GetOrigin(), BEAM.trace_hit);
+    // printl("Tracing from: " + RCB_BEAM.beam.GetOrigin() + "to" + RCB_BEAM.trace_hit);
+    // if (RCB_BEAM.extent > 0 ) {DebugDrawLine(RCB_BEAM.beam.GetOrigin(), RCB_BEAM.trace_hit, 255, 255, 255, false, 10);}
+    if (RCB_BEAM.extent > 0 ) {
+        raycast_beam_store(RCB_BEAM.beam.GetOrigin(), RCB_BEAM.trace_hit);
     }
     
     if(::rcb_portal_list == null) {
@@ -261,14 +256,14 @@ function raycast_beam_portal_trace()
     foreach(k, v in ::rcb_portal_list) {
         // printl("Tracing Portals")
         local angles = v.GetAngles();
-        local offset = unrotate(BEAM.trace_hit - v.GetOrigin(), angles);
+        local offset = unrotate(RCB_BEAM.trace_hit - v.GetOrigin(), angles);
         if(fabs(offset.y) < 32 && fabs(offset.z) < 54 &&
                 offset.x < 1 && offset.x > -12) {
 
             // Position is close to (or past) portal surface.
             // Find other portal end and check incoming direction.
 
-            local current_dir = vector_resize(BEAM.trace_hit - self.GetOrigin(), 1);
+            local current_dir = vector_resize(RCB_BEAM.trace_hit - self.GetOrigin(), 1);
             local local_dir = unrotate(current_dir, angles);
             local other = raycast_beam_portal_find_partner(v);
             if(other != null && local_dir.x < 0) {
@@ -280,5 +275,5 @@ function raycast_beam_portal_trace()
         }
     }
 
-    callback(callback_function)
+    callback(rcb_callback_function)
 }
