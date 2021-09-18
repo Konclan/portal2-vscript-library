@@ -10,6 +10,14 @@ function find_thing(class_name, position)
     return Entities.FindByClassnameNearest(class_name, position, 1);
 }
 
+beat_time <- 0.01;
+
+function schedule_call(code)
+{
+    // Set an event to start the next operation after beat_time seconds.
+    EntFireByHandle(self, "RunScriptCode", code, beat_time, null, null);
+}
+
 //  ------------------------------------------------------------------------
 //  [TeamSpen210]                  Math is math
 //  ------------------------------------------------------------------------

@@ -27,12 +27,25 @@
 
 IncludeScript("utils.nut");
 
+// List of beams
 BEAMS <- [];
+
+// List of open portals and portal IDs.
+::rcb_portal_list <- null;
+::rcb_portal_ids <- null;
+
+// ::rcb_portal_used<-[false,false,false,false]
+// ::rcb_portal<-[init()]
+// foreach(k,v in ::mbeam_portal){turn_off(v)}
+
+// Tracing
+extent <- -1;
+trace_hit <- Vector(0, 0, 0);
 
 function raycast_beam_init() {
 
     // Find our maker ent and set position variables
-    local maker = Entities.FindByName(null, "@raycast_beammaker");
+    local maker = Entities.FindByName(null, "@rcb_maker");
     local beam_pos = maker.GetOrigin() + (maker.GetLeftVector() * -16);
     local target_pos = maker.GetOrigin() + (maker.GetLeftVector() * -32);
 
@@ -72,16 +85,200 @@ function raycast_beam_init() {
         sprite.SetOrigin(target.GetOrigin() + sprite.GetUpVector() * -16);
 
         // Save ents to table
-        BEAMS.append({beam = beam, target = target, sprite = sprite});
+        BEAMS.append({beam = beam, target = target, sprite = sprite, used = false});
+    }
+
+    // Set up the enveloping func_portal_detector(s)
+    // to keep track of the open-ness of portals.
+    // Detectors with name "@sendtor_portal_detect0" detect ID 0 (SP),
+    // ones with name "@sendtor_portal_detect1" detect ID 1 (Atlas),
+    // "@sendtor_portal_detect2" detect ID 2 (P-Body) etc.
+    local ent = Entities.FindByName(null, "@rcb_portal_detect*");
+    while(ent != null) {
+
+        local id = ent.GetName().slice(18);
+        printl("Ent: " + ent.GetName());
+        printl("Id: " + id)
+        if(id == "") { id = "0"; }
+
+        EntFireByHandle(ent, "AddOutput", 
+            "OnStartTouchPortal !activator:RunScriptCode:" + "rcb_active <- " + id, 
+            0, null, null);
+        EntFireByHandle(ent, "AddOutput", 
+            "OnEndTouchPortal !activator:RunScriptCode:"+ "rcb_active <- -1", 
+            0, null, null);
+        EntFireByHandle(ent, "AddOutput", "OnStartTouchPortal " 
+        + self.GetName() + ":RunScriptCode:"+ "portal_updated", 
+        0, null, null);
+        EntFireByHandle(ent, "AddOutput", "OnEndTouchPortal " 
+        + self.GetName() + ":RunScriptCode:" + "portal_updated", 
+        0, null, null);
+
+        ent = Entities.FindByName(ent, "@rcb_portal_detect*");
     }
 }
 
 function raycast_beam_trace(start_vec, angle, portals) {
     raycast_beam_position_emitter(BEAMS[0], start_vec, angle);
+    EntFireByHandle(self, "CallScriptFunction", "trace_portals", 0.01, null, null);
 }
 
 function raycast_beam_position_emitter(ents, origin, angle) {
     local end_vec = origin + rotate(Vector(16384, 0, 0), angle)
     ents.beam.SetOrigin(origin);
     ents.target.SetOrigin(end_vec);
+}
+
+//  ------------------------------------------------------------------------
+//  [HMW]                          Portals
+//  ------------------------------------------------------------------------
+
+function portal_updated() {
+    ::rcb_portal_list <- null
+    EntFireByHandle(self, "CallScriptFunction", "trace_portals", 0.01, null, null);
+}
+
+function enable_portal_extent(portal_in, portal_out)
+{
+    // Extend the beam through a portal.
+
+    // Look up a free extension beam if one is not associated already.
+    if(extent < 0) {
+        extent = 0;
+        while(BEAMS[extent].used == true) {
+            ++extent;
+            if(extent > 15) {
+                extent = -1;
+                return;
+            }
+        }
+    }
+
+    BEAMS[extent].used = true;
+    local next_ents = BEAMS[extent];
+    local offset_from = portal_in.GetOrigin();
+    local offset_to = portal_out.GetOrigin();
+    local angles_from = portal_in.GetAngles();
+    local angles_to = portal_out.GetAngles();
+
+    local dir = vector_resize(BEAMS[0].target.GetOrigin() -
+                              self.GetOrigin(), 2);
+    dir = unrotate(dir, angles_from);
+    dir.x *= -1;
+    dir.y *= -1;
+    dir = rotate(dir, angles_to);
+    local dir_far = dir * 32768;
+
+    local pos = BEAMS[extent].sprite.GetOrigin();
+    pos = unrotate(pos - offset_from, angles_from);
+    pos.x *= -1;
+    pos.y *= -1;
+    pos = rotate(pos, angles_to) + offset_to;
+    next_ents.beam.SetOrigin(pos + dir);
+    next_ents.target.SetOrigin(pos + dir_far);
+
+    // if(i == 0) {
+    //     next_ents.trigger.SetOrigin(pos + dir);
+    //     next_ents.trigger.SetForwardVector(dir);
+    // }
+
+    // next_ents.BEAMS[0].GetScriptScope().callback <- callback;
+    // turn_on(next_ents);
+}
+
+function disable_portal_extent()
+{
+    // Turn off an extention beam if it has been associated with this beam,
+    // and remove the association.
+
+    if(extent >= 0) {
+        turn_off(::rcb_portal[extent]);
+        ::rcb_portal_used[extent] = false;
+        extent = -1;
+    }
+}
+
+function get_portal_id(portal)
+{
+    // For active portals, return the linkage ID.
+    // For inactive portals, return -1.
+    // (A portal's rcb_active attribute is set by the
+    // @rcb_portal_detect portal detectors in the map.)
+
+    portal.ValidateScriptScope();
+    local portal_ss = portal.GetScriptScope();
+    if("rcb_active" in portal_ss) {
+        return portal_ss.rcb_active;
+    }
+    else {
+        return -1;
+    }
+}
+
+function find_open_portals()
+{
+    // Find all active portals in the map and fill portal_list and portal_ids.
+
+    ::rcb_portal_list <- [];
+    ::rcb_portal_ids <- [];
+
+    local portal = Entities.FindByClassname(null, "prop_portal");
+    while(portal != null) {
+        local id = get_portal_id(portal);
+        if(id >= 0) {
+            // Only add active portals, not closed ones.
+            ::rcb_portal_list.append(portal);
+            ::rcb_portal_ids.append(id);
+        }
+        printl("Portal: " + portal.GetClassname() + "[" + id + "]")
+        portal = Entities.FindByClassname(portal, "prop_portal");
+    }
+}
+
+
+function find_portal_partner(portal)
+{
+    // Find the other end of a portal.
+
+    local this_id = get_portal_id(portal)
+    foreach(k, v in ::rcb_portal_list) {
+        if(v != portal && ::rcb_portal_ids[k] == this_id) {
+            return v;
+        }
+    }
+    return null;
+}
+
+function trace_portals()
+{
+    // Check if the tracing beam hits a portal.
+
+    trace_hit = BEAMS[0].sprite.GetOrigin();
+
+    if(::rcb_portal_list == null) {
+        find_open_portals();
+    }
+
+    foreach(k, v in ::rcb_portal_list) {
+        local angles = v.GetAngles();
+        local offset = unrotate(trace_hit - v.GetOrigin(), angles);
+        if(fabs(offset.y) < 32 && fabs(offset.z) < 54 &&
+                offset.x < 1 && offset.x > -12) {
+
+            // Position is close to (or past) portal surface.
+            // Find other portal end and check incoming direction.
+
+            local current_dir = vector_resize(trace_hit - self.GetOrigin(), 1);
+            local local_dir = unrotate(current_dir, angles);
+            local other = find_portal_partner(v);
+            if(other != null && local_dir.x < 0) {
+                // Calculate the next beam.
+                enable_portal_extent(v, other);
+                return;
+            }
+        }
+    }
+
+    // If no portal, turn off extension beam
+    disable_portal_extent();
 }
