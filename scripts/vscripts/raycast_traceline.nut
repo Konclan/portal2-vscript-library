@@ -66,7 +66,7 @@ function raycast_traceline_trace(start_vec, angle, portals, call, cont) {
         // printl(state.step)
         ++state.step;
         local endpoint = raycast_traceline_trace_beam(state);
-        RCTL_TRACE.append({origin = state.pos, trace_hit = endpoint})
+        raycast_traceline_store(state.pos, endpoint, angle)
         state.pos = endpoint;
         if (! raycast_traceline_portal_trace(state)) {
             break;
@@ -76,9 +76,10 @@ function raycast_traceline_trace(start_vec, angle, portals, call, cont) {
     callback(call)
 }
 
-function raycast_traceline_store(start_vec, end_vec) {
+function raycast_traceline_store(start_vec, end_vec, direction) {
     // DebugDrawLine(start_vec, end_vec, 255, 255, 255, false, 10);
-    RCTL_TRACE.append({origin = start_vec, trace_hit = end_vec, index = RCTL_TRACE.len()})
+    local index = RCTL_TRACE.len();
+    RCTL_TRACE.append({index = index, origin = start_vec, trace_hit = end_vec, dir = direction});
 }
 
 //  ------------------------------------------------------------------------
